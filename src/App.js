@@ -4,6 +4,8 @@ import { ColorModeContext, useMode } from "./theme";
 import Topbar from "./components/Topbar/Topbar";
 import { Route, Routes } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
+import Sidebar from "./components/Topbar/Sidebar";
+import Sidebars from "./components/Topbar/Sidebar";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -14,6 +16,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <div className="app">
+          <Sidebars isSidebar={isSidebar} />
           <main className="content">
             <Topbar setIsSidebar={setIsSidebar} />
             <Routes>
