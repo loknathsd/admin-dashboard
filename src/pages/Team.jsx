@@ -3,7 +3,6 @@ import { DataGrid } from "@mui/x-data-grid";
 import AdminPanelSettingsOutlinedIcon from "@mui/icons-material/AdminPanelSettingsOutlined";
 import LockOpenOutlinedIcon from "@mui/icons-material/LockOpenOutlined";
 import SecurityOutlinedIcon from "@mui/icons-material/SecurityOutlined";
-// import Header from "../../components/Header";
 import { mockDataTeam } from "../data/data";
 import { tokens } from "../theme";
 import Header from "../components/Header/Header";
